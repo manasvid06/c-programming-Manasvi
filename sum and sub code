@@ -1,0 +1,14 @@
+#include<stdio.h>
+void main(){
+int sensor1,sensor2,sum,sub;
+clrscr();
+printf("enter the number");
+scanf("%d",&sensor1);
+printf("enter the number");
+scanf("%d",&sensor2);
+sum=sensor1+sensor2;
+sub=sensor1-sensor2;
+printf("sum of both the number %d ",sum);
+printf( "\n sub or both number%d", sub);
+getch();
+}
