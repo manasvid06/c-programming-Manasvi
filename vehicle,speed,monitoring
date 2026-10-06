@@ -1,0 +1,29 @@
+#include<stdio.h>
+void main()
+{
+    float speed;
+
+    clrscr();
+
+    printf("Enter vehicle speed: ");
+    scanf("%f",&speed);
+
+    if(speed < 30)
+    {
+        printf("Speed is Low");
+    }
+    else if(speed >= 30 && speed < 60)
+    {
+        printf("Speed is Normal");
+    }
+    else if(speed >= 60 && speed < 80)
+    {
+        printf("Speed is High");
+    }
+    else
+    {
+        printf("Overspeed Alert");
+    }
+
+    getch();
+}
