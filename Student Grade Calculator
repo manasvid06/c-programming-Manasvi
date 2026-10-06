@@ -1,0 +1,33 @@
+#include<stdio.h>
+void main()
+{
+    float marks;
+
+    clrscr();
+
+    printf("Enter student marks: ");
+    scanf("%f",&marks);
+
+    if(marks>=75)
+    {
+        printf("Grade A");
+    }
+    else if(marks>=60)
+    {
+        printf("Grade B");
+    }
+    else if(marks>=50)
+    {
+        printf("Grade C");
+    }
+    else if(marks>=35)
+    {
+        printf("Grade D");
+    }
+    else
+    {
+        printf("Fail");
+    }
+
+    getch();
+}
