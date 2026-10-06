@@ -1,0 +1,28 @@
+#include<stdio.h>
+void main()
+{
+    float bp;
+
+    clrscr();
+
+    printf("Enter blood pressure: ");
+    scanf("%f", &bp);
+
+    if(bp <= 100)
+    {
+        printf("Normal");
+    }
+    else if(bp > 100)
+    {
+        if(bp > 150)
+        {
+            printf("Very High");
+        }
+        else
+        {
+            printf("High");
+        }
+    }
+
+    getch();
+}
