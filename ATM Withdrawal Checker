@@ -1,0 +1,34 @@
+#include<stdio.h>
+void main()
+{
+    float balance,withdraw;
+
+    clrscr();
+
+    printf("Enter account balance: ");
+    scanf("%f",&balance);
+
+    printf("Enter withdrawal amount: ");
+    scanf("%f",&withdraw);
+
+    if(withdraw<=0)
+    {
+        printf("Invalid withdrawal amount");
+    }
+    else if(withdraw>balance)
+    {
+        printf("Insufficient balance");
+    }
+    else if(withdraw>20000)
+    {
+        printf("Withdrawal limit exceeded");
+    }
+    else
+    {
+        balance=balance-withdraw;
+        printf("Withdrawal successful");
+        printf("\nRemaining balance = %.2f",balance);
+    }
+
+    getch();
+}
